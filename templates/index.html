@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Together AI Chat</title>
+</head>
+<body style="font-family: sans-serif; margin: 2rem;">
+  <h2>Talk to Together AI (Mixtral)</h2>
+  <form method="POST">
+    <textarea name="prompt" rows="5" cols="60" placeholder="Enter your prompt here..." required></textarea><br><br>
+    <button type="submit">Send</button>
+  </form>
+
+  {% if response %}
+    <h3>🔷 Together AI (Mixtral) says:</h3>
+    <pre>{{ response }}</pre>
+  {% endif %}
+</body>
+</html>
